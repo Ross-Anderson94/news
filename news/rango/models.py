@@ -4,7 +4,7 @@ class Category(models.Model):
 	name = models.CharField(max_length=128, unique=True)
 
 	def __str__(self):
-		returnself.name
+		return self.name
 
 class Page(models.Model):
 	category = models.ForeignKey(Category, on_delete=models.CASCADE)
